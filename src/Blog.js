@@ -3,7 +3,8 @@ import "antd/dist/antd.css"
 import "./Blog.css";
 import Info from "./Info.js";
 import { Layout, Menu, Breadcrumb, Image, Divider, Row, Col, Card } from 'antd';
-import { UserOutlined, LaptopOutlined, NotificationOutlined, PlayCircleOutlined, SmileOutlined } from '@ant-design/icons';
+import { UserOutlined, LaptopOutlined, NotificationOutlined, PictureOutlined, SmileOutlined, TeamOutlined, 
+        CompassOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, YoutubeOutlined, TrademarkOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -92,65 +93,127 @@ function Blog (){
     </Row>
 
     <Row>{infos.map(info => {
-                            return (
-                                <Info infos={infos} />
-                            )
+                          return (
+                             <Info infos={infos} />
+                          )
                         })}
     </Row>
 
     <Row>
       <br></br>    <br></br>    <br></br>
-      <Col span={10}> Turtles are amazing!
+      <Col span={10}> 
+      <ul><h5>Aquatic</h5>
 
+      <li>mud turtles and musk turtles (family Kinosternidae)</li>
+      <li>pitted shell turtle (Carettochelys insculpta)</li>
+      <li>pond turtles (families Emydidae and Bataguridae; most species aquatic)</li>
+        <ul>
+        <li>family Emydidae</li>
+          <ul>
+            <li>Blanding’s turtle (Emydoidea blandingii)</li>
+            <li>chicken turtle (Deirochelys reticularia)</li>
+            <li>painted turtle (Chrysemys picta)</li>
+            <li>terrapin (Malaclemys terrapin)</li>
+            </ul>
+        </ul>
+            <li>sea turtles (families Dermochelyidae and Cheloniidae)</li>
+        <ul>
+        <li>genus Archelon (extinct)</li>
+        </ul>
+        <li>side-necked turtles (familes Chelidae, Pelomedusidae, and Podocnemididae)</li>
+        <ul>
+        <li>arrau (Podocnemis expansa)</li>
+        </ul>
+        <li>snake-necked turtles (family Chelidae)</li>
+        <li>snapping turtles (family Chelydridae)</li>
+        <li>softshell turtles (family Trionychidae)</li>
+    </ul>
+
+    <ul><h5>Terrestrial</h5>
+    <li>Asian box turtles (family Geomydidae)</li>
+    <li>tortoises (family Testudinae)</li>
+    <li>pond turtles (families Emydidae and Bataguridae; most species aquatic)</li>
+        <ul>
+        <li>family Emydidae</li>
+        <ul>
+          <li>genus Clemmys (some species semiaquatic)</li>
+          <ul>
+              <li>spotted turtle (Clemmys guttata)</li>
+              <li>wood turtle (Clemmys insculpta)</li>
+          </ul>
+          <li>North American box turtles (genus Terrapene)</li>
+          </ul>
+        </ul>
+    </ul>
       </Col>
       <Col span={14}>.<SmileOutlined />
       <Image
-             width={600}
+             width={715}
              src=" https://www.tastecafeatchesilbeach.co.uk/public/images/sealife%20centre.png"
             />
       </Col>
     </Row>                  
                             <>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
+      Turtles are reptiles of the order Testudines characterized by a special bony or cartilaginous shell developed from their ribs and acting as a shield. "Turtle" may refer to the order as a whole (American English) or to fresh-water and sea-dwelling testudines (British English). The order Testudines includes both extant (living) and extinct species. The earliest known members of this group date from the Middle Jurassic, making turtles one of the oldest reptile groups and a more ancient group than snakes or crocodilians. Of the 356 known species alive today, some are highly endangered.[
     </p>
-    <Divider plain>Text</Divider>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
+      Turtles are ectotherms—animals commonly called cold-blooded—meaning that their internal temperature varies according to the ambient environment. However, because of their high metabolic rate, leatherback sea turtles have a body temperature that is noticeably higher than that of the surrounding water. Turtles are classified as amniotes, along with other reptiles, birds, and mammals. Like other amniotes, turtles breathe air and do not lay eggs underwater, although many species live in or around water. 
     </p>
+    <Divider plain>Our Mission <TeamOutlined /></Divider>
+    <p>
+    Here at Colorful Fish we care deeply about our oceans, the creatures that live above and beneath the surface and those we are lucky enough to have in our care.
+    </p>
+  
     <Divider orientation="left" plain>
-      Left Text
+      Programs <PictureOutlined />
     </Divider>
+   
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
+    In 2013, we set up a charity to support projects making a difference to oceans and marine life around the world.
+    </p>
+    <p>
+    Colorful Fish Trust has a vision of oceans that are healthy, protected, and full of diverse, wonderful creatures. Coloful Fish Trust runs sanctuaries that look after poorly creatures such as seals. They also run inspiring campaigns that educate and bring awareness to the dangers our friends in the ocean face.
+    </p>
+    <p>
+    Most recently, Colorful Fish Trust opened the world's first beluga whale sanctuary in Iceland. We’re proud to support them, along with our friends at Merlin Entertainments, and Whale and Dolphin Conservation.
     </p>
     <Divider orientation="right" plain>
-      Right Text
+      More Information <CompassOutlined />
     </Divider>
+    <h3>
+    Every year, we welcome over 20 million explorers into our incredible underwater world.
+    </h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-      probare, quae sunt a te dicta? Refert tamen, quo modo.
+    It’s all part of our mission to inspire a love for the ocean and its creatures – and to encourage people to preserve them for the future. With 50 aquariums, 2 sanctuaries, and over 180,000 creatures, we bring our guests closer to the oceans than ever before.
+    </p>
+    <p>
+    So prepare to get up close to glittering scales, humongous tentacles and razor-sharp teeth. Explore different habitats, from the sweltering tropics to tidal rock pools. And discover all about our weird and wonderful creatures with fun and interactive learning experiences – Amazing Discovery
     </p>
     </>,
+    <Row>
+    <Col span={7} >
            <Image
              width={300}
-             src=" https://www.talk-business.co.uk/wp-content/uploads/2017/02/shutterstock_220546063.jpg"
+             src="https://i.pinimg.com/originals/11/20/1e/11201ec9a37f9d4a1cc6e660227129bb.jpg"
             />
+    </Col>
+    <Col span={8}>
           <Image
-            width={200}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+            width={350}
+            src="https://i.pinimg.com/originals/69/80/3f/69803f0e725f9525a5a0bf5d22b763fa.jpg"
             />
+    </Col>
+    <Col span={9}>
             <Image
-            width={200}
-            src="https://burntwood.com/wp-content/uploads/2015/09/Why-Catch-Release-Is-The-Solid-Fishing-Practice.jpg"
+            width={340}
+            src="https://4.bp.blogspot.com/_rXvAtsAVfEs/TDW2Jdof0-I/AAAAAAAADgE/cIRpweFpGb4/s1600/dolphin.jpg"
             />
-
+    </Col>
+    </Row>
+    <Footer>
+      Thank you for conserving Sealife! - Follow Colorful Fish<TrademarkOutlined /> on <FacebookOutlined />        <TwitterOutlined />       <InstagramOutlined />      <YoutubeOutlined />
+    </Footer>
    
           </Content>
         </Layout>
