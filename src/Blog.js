@@ -4,7 +4,7 @@ import "./Blog.css";
 import Info from "./Info.js";
 import { Layout, Menu, Breadcrumb, Image, Divider, Row, Col, Card } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined, PictureOutlined, SmileOutlined, TeamOutlined, 
-        CompassOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, YoutubeOutlined, TrademarkOutlined } from '@ant-design/icons';
+        CompassOutlined, FacebookOutlined, TwitterOutlined, InstagramOutlined, YoutubeOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -102,6 +102,7 @@ function Blog (){
     <Row>
       <br></br>    <br></br>    <br></br>
       <Col span={10}> 
+      <h2>Types of Turtles</h2>
       <ul><h5>Aquatic</h5>
 
       <li>mud turtles and musk turtles (family Kinosternidae)</li>
@@ -146,7 +147,11 @@ function Blog (){
         </ul>
     </ul>
       </Col>
-      <Col span={14}>.<SmileOutlined />
+      <Col span={14}>.<SmileOutlined /> Turtles are fun! <SmileOutlined />
+      <br></br>
+      .<SmileOutlined /> Turtles are friends! <SmileOutlined />
+      <br></br>
+      .<SmileOutlined /> Turtles are the best! <SmileOutlined />
       <Image
              width={715}
              src=" https://www.tastecafeatchesilbeach.co.uk/public/images/sealife%20centre.png"
@@ -178,7 +183,7 @@ function Blog (){
     <p>
     Most recently, Colorful Fish Trust opened the world's first beluga whale sanctuary in Iceland. We’re proud to support them, along with our friends at Merlin Entertainments, and Whale and Dolphin Conservation.
     </p>
-    <Divider orientation="right" plain>
+    <Divider plain>
       More Information <CompassOutlined />
     </Divider>
     <h3>
@@ -212,7 +217,7 @@ function Blog (){
     </Col>
     </Row>
     <Footer>
-      Thank you for conserving Sealife! - Follow Colorful Fish<TrademarkOutlined /> on <FacebookOutlined />        <TwitterOutlined />       <InstagramOutlined />      <YoutubeOutlined />
+      Thank you for conserving Sealife! - Follow Colorful Fish on <FacebookOutlined />        <TwitterOutlined />       <InstagramOutlined />      <YoutubeOutlined />
     </Footer>
    
           </Content>
